@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: "DM Sans", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header {
+    background: linear-gradient(90deg,rgb(0, 131, 102), #0e1ba3);
+    width: 100%;
+    text-align: center;
+}
+
+.header {
+    color:white;
+    line-height: 70px;
+}
+
+#search {
+    background-color: rgb(207, 225, 241);
+}
+
+#results {
+    background-color: beige;
+}
