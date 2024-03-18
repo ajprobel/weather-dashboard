@@ -19,19 +19,71 @@
             <h3 class="title is-4">Search for a City...</h3>
             <div class="field">
                 <div class="control">
-                  <input class="input is-hovered" type="text" placeholder="Ex. Chicago">
+                    <input id="searchBar" class="input is-hovered" type="text" placeholder="Ex. Chicago">
                 </div>
                 <div class="control">
-                    <button class="button is-link m-2">Search</button>
-                  </div>
-              </div>
+                    <button id="searchBtn" class="button is-link m-2">Search</button>
+                </div>
+            </div>
         </section>
 
         <section id="results" class="column ml-3 has-text-centered">
-            <h3 class="title is-4">forecast goes here</h3>
+            <h3 class="title is-4">Your Forecast</h3>
+            <div class="box">
+                <div id="cityInfo">
+                    <h2 id="cityName" class="has-text-left">City Name</h2>
+                    <img id="todayIcon" class="icon">
+                </div>
+
+                <h4 class="has-text-left block">Temperature: <span id="todayTemp"></span></h4>
+                <h4 class="has-text-left block">Humidity: <span id="todayHum"></span></h4>
+                <h4 class="has-text-left block">Wind: <span id="todayWind"></span></h4>
+            </div>
+
+            <h2 class="block title is-4">5 Day Forecast:</h2>
+
+            <div class="columns">
+                <div class="column m-2 box">
+                    <h3 id="day1Date" class="title is-6">Day1</h3>
+                    <img id="day1Icon" class="iconSmall">
+                    <p class="has-text-left">Temp: <span id="day1Temp"></span></p>
+                    <p class="has-text-left">Humidity: <span id="day1Hum"></span></p>
+                    <p class="has-text-left">Wind: <span id="day1Wind"></span></p>
+                </div>
+                <div class="column m-2 box">
+                    <h3 id="day2Date" class="title is-6">Day2</h3>
+                    <img id="day2Icon" class="iconSmall">
+                    <p class="has-text-left">Temp: <span id="day2Temp"></span></p>
+                    <p class="has-text-left">Humidity: <span id="day2Hum"></span></p>
+                    <p class="has-text-left">Wind: <span id="day2Wind"></span></p>
+                </div>
+                <div class="column m-2 box">
+                    <h3 id="day3Date" class="title is-6">Day3</h3>
+                    <img id="day3Icon" class="iconSmall">
+                    <p class="has-text-left">Temp: <span id="day3Temp"></span></p>
+                    <p class="has-text-left">Humidity: <span id="day3Hum"></span></p>
+                    <p class="has-text-left">Wind: <span id="day3Wind"></span></p>
+                </div>
+                <div class="column m-2 box">
+                    <h3 id="day4Date" class="title is-6">Day4</h3>
+                    <img id="day4Icon" class="iconSmall">
+                    <p class="has-text-left">Temp: <span id="day4Temp"></span></p>
+                    <p class="has-text-left">Humidity: <span id="day4Hum"></span></p>
+                    <p class="has-text-left">Wind: <span id="day4Wind"></span></p>
+                </div>
+                <div class="column m-2 box">
+                    <h3 id="day5Date" class="title is-6">Day5</h3>
+                    <img id="day5Icon" class="iconSmall">
+                    <p class="has-text-left">Temp: <span id="day5Temp"></span></p>
+                    <p class="has-text-left">Humidity: <span id="day5Hum"></span></p>
+                    <p class="has-text-left">Wind: <span id="day5Wind"></span></p>
+                </div>
+            </div>
         </section>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
+        integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U=" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <script src="./assets/js/script.js"></script>
 </body>

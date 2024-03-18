@@ -22,3 +22,35 @@ header {
 #results {
     background-color: beige;
 }
+
+p {
+    margin-bottom: 5px;
+}
+
+.icon {
+    height: 65px;
+    width: 65px;
+    display: inline;
+}
+
+.iconSmall {
+    height: 50px;
+    width: 50px;
+    display: inline;
+}
+
+#cityInfo {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+#cityName {
+    justify-self: center;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.hidden {
+    display: none;
+}
