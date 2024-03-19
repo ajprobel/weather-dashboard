@@ -92,32 +92,31 @@ function requestAPI() {
   }
 }
 
+// Renders a list from the saved search local storage
 function renderSearchHistory() {
   var search = localStorage.getItem("Search");
-
   if (!search) {
     return;
   } else {
-    console.log(search);
     var newArray = search.split(",");
     console.log(newArray);
-    console.log(newArray.length)
-
     function renderthisplease() {
       for (var n = 0; n < newArray.length; n++) {
-        var newlistEL = $('<button>');
-        newlistEL.text(newArray[n]);
-        newlistEL.attr("class", "button is-fullwidth is-link is-outlined m-2");
-        newlistEL.appendTo(searchListEl);
-        console.log("done")
+        var newButton = $('<button>');
+        var searchList = $("#searchHistory");
+        newButton.text(newArray[n]);
+        newButton.attr("class", "button is-fullwidth is-link is-outlined m-2");
+        newButton.appendTo(searchList);
       }
     }
-
     renderthisplease();
+
+    // didn't finish - click button to display city's weather data
+    $("#searchHistory").on("click", function() {
+      console.log(this);
+    })
   }
-
-
-}
+};
 
 
 
